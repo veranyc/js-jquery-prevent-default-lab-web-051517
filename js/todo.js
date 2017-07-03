@@ -1,14 +1,14 @@
 $(document).ready(function(){
   // call functions here
+    submitForm()
 });
 
 // define functions here
 
-function toDoSubmit() {
+function submitForm() {
   $('form').on('submit', function(event){
-    var todo = $('#item').val();
-    $('ol').append('<li>' + todo + '</li>');
-    event.preventDefault();
-  });
+    let toDo = $('#item').val()
+    $('ol').append('<li>' + toDo + '</li>')
+    event.preventDefault()
+  })
 }
-})
